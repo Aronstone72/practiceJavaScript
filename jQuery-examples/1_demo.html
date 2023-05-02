@@ -1,0 +1,52 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+            $("h1").text("jQuery");
+            $("p").text("Write Less to More..");
+            $(".title").html("Welcome to <b>JavaScript</b> library.");
+        })
+    </script>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+    <div class="title"></div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+             var categories = ["Electronics", "Footwear", "Fashion"];
+             for(var category of categories) {
+                 $(`<li>${category}</li>`).appendTo("ol");
+                 $(`<option>${category}</option>`).appendTo("select");
+             }
+        })
+    </script>
+</head>
+<body>
+   <ol>
+
+   </ol>
+   <select>
+
+   </select>
+</body>
+</html>
+

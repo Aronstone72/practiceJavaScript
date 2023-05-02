@@ -1,0 +1,154 @@
+<!-- alert() -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function DeleteClick(){
+            alert("Delete record\nRecord will be deleted\nAre you sure?");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="DeleteClick()">Delete</button>
+</body>
+</html> -->
+
+<!-- Confirm() -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function DeleteClick(){
+            flag = confirm("Delete Record\n Record will be deleted\nAre you sure?");
+            if(flag==true){
+                alert("Record Deleted Successfully..");
+            } else {
+                alert("You Cancelled..")
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="DeleteClick()">Delete</button>
+</body>
+</html> -->
+
+<!-- document.write() -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function DeleteClick(){
+            flag = confirm("Delete Record\n Record will be deleted\nAre you sure?");
+            if(flag==true){
+                document.write("<font color='red'><b><i>Record Deleted Successfully..</b></i></font><br><a href='3_outputmethod.html'>back</a>");
+            } else {
+                alert("You Cancelled..");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="DeleteClick()">Delete</button>
+</body>
+</html> -->
+
+<!-- innerText | innerHTML | outerHTML -->
+<!-- innerText :  It can't used formats. It is RC data type -->
+
+<!-- innerHTML -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function DeleteClick(){
+            flag = confirm("Delete Record\n Record will be deleted\nAre you sure?");
+            if(flag==true){
+                document.querySelector("p").innerHTML = "<font size='5' color='red'>Deleted Successfully..</font>";
+            } else {
+                alert("You Cancelled..");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="DeleteClick()">Delete</button>
+    <div style="display:flex;justify-content:center;align-items:center;height:400px;">
+        <p></p>
+    </div>
+</body>
+</html> -->
+
+<!-- outerHTML -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function DeleteClick(){
+            flag = confirm("Delete Record\n Record will be deleted\nAre you sure?");
+            if(flag==true){
+                document.querySelector("h1").outerHTML = "<p><font size='5' color='red'>Deleted Successfully..</font></p>";
+            } else {
+                alert("You Cancelled..");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="DeleteClick()">Delete</button>
+    <div style="display:flex;justify-content:center;align-items:center;height:400px;">
+        <h1></h1>
+    </div>
+</body>
+</html> -->
+
+<!-- Console Method -->
+<!-- innerHTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function DeleteClick(){
+            console.warn("Delete Button Clicked");
+            flag = confirm("Delete Record\n Record will be deleted\nAre you sure?");
+            if(flag==true){
+                console.error("Ok button is clicked");
+                document.querySelector("p").innerHTML = "<font size='5' color='red'>Deleted Successfully..</font>";
+            } else {
+                alert("You Cancelled..");
+                console.log("Cancel button is cliked")
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="DeleteClick()">Delete</button>
+    <div style="display:flex;justify-content:center;align-items:center;height:400px;">
+        <p></p>
+    </div>
+</body>
+</html>

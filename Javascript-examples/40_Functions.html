@@ -1,0 +1,47 @@
+<!-- Function Closure -->
+<!-- function Outer()
+    {
+        function Inner(){
+          return value;
+        }
+        return Inner();
+    } -->
+
+<script>
+    function Outer(){
+        let x = 10;
+        function Inner(){
+           var y = ++x;
+           return `X=${x} <br> Y=${y}`;
+        }
+        return Inner();
+    }
+    document.write(Outer());
+</script>
+
+<!-- Function Recursions -->
+<!-- function f1()
+    {
+        f1();
+    } -->
+
+<script>
+   function Fact(n) {
+       if(n==0) {
+        return 1;
+       }
+       return n * Fact(n-1);
+   }
+   document.write(`Factorial of 6 is ${Fact(6)}`);
+</script>
+
+<!-- FAQ: What is difference between Rest and Spread? -->
+<script>
+    function Details(id, name, price, stock, rating, count)
+    {
+        document.write(`Id=${id}<br>Name=${name}<br>Price=${price}<br>Stock=${stock}<br>Rating=${rating}<br>Count=${count}`);
+    }
+   
+    Details(...[1, "TV", 34000.33], true, ...[4.3, 3000]);
+</script>
+

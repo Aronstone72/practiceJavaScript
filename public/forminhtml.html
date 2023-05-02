@@ -1,0 +1,366 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Element in HTML</title>
+</head>
+<body>
+    <form method="get">
+      Test :
+      <input type="text" pattern="Red\i" name="fname">
+      <button value="submit">submit</button>
+    </form>
+</body>
+</html>
+
+<br>
+id 
+name
+class
+value
+readonly
+disabled
+size
+minlength
+maxlenghth
+placeholder
+autofocus
+required
+pattern
+-->
+
+<!--    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dt {
+            font-weight: bold;
+        }
+        .UserName:invalid+div {
+            display: block;
+            color:red;
+        }
+        .UserName:valid+div {
+            display: none;
+        }
+        .Mobile:invalid+div {
+            display: block;
+            color:red;
+        }
+        .Mobile:valid+div {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+   
+     <form>
+         <dl>
+            <dt>User Name :</dt>
+            <dd>
+                <input type="text" class="UserName" required>
+                <div>User Name Required</div>
+            </dd>
+            <dt>Mobile No :</dt>
+            <dd>
+                <input type="text" pattern="\+91\d{10}" class="Mobile">
+                <div>Invalid Mobile : +91 and 10 digits required</div>
+            </dd>
+         </dl>
+     </form>
+   
+</body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dt {
+            font-weight: bold;
+        }
+        .UserName:invalid+div {
+            display: block;
+            color:red;
+        }
+        .UserName:valid+div {
+            display: none;
+        }
+        .Mobile:invalid+div {
+            display: block;
+            color:red;
+        }
+        .Mobile:valid+div {
+            display: none;
+        }
+        .Mobile:invalid {
+            border:2px solid red;
+            box-shadow: 2px 2px 2px red;
+        }
+        .Mobile:valid {
+            border:2px solid green;
+            box-shadow: 2px 2px 2px green;
+        }
+        .UserName:read-only {
+            cursor:not-allowed;
+        }
+    </style>
+</head>
+<body>
+   
+     <form>
+         <dl>
+            <dt>User Name</dt>
+            <dd>
+                <input type="text" value="John" readonly class="UserName">
+       
+            </dd>
+            <dt>Mobile</dt>
+            <dd>
+                <input type="text" pattern="\+91\d{10}" class="Mobile">
+                <div>Invalid Mobile : +91 and 10 digits required</div>
+            </dd>
+         </dl>
+     </form>
+   
+</body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <style>
+    ul{
+        list-style: none;
+        border: 1px solid black;
+        padding: 10px;
+        width: 200px;
+        height: 100px;
+        overflow: auto;
+    }
+
+    .terms{
+        width: 400px;
+        height: 220px;
+        text-align: justify;
+
+    }
+
+    .accept+span{
+        color: red;
+    }
+
+    .accept:checked+span{
+        color: green;
+    }
+
+  </style>
+</head>
+<body class="container">
+
+    <!-- TextBox -->
+    <form>
+        TextBox :
+        <input type="text" name="Text" required minlength="15" maxlength="30" pattern="(?=.*[A-Z]{4,15})">
+        <button>Submit</button> 
+    </form> <br>
+
+    <!-- Password -->
+    <form>
+        Password :
+        <input type="password" name="Password" required minlength="15" maxlength="30" pattern="(?=.*[A-Z]{4,15})">
+        <button>Submit</button> 
+    </form> <br>
+
+    <!-- Number Input -->
+    <form>
+        Age :
+        <input type="number" name="Number" required min="15" max="30" value=22 step="1">
+        <button>Submit</button> 
+    </form> <br>
+          
+    <!-- Range Input -->
+    <form> 
+        Range :
+        <input type="range" min="10000" max="40000" value="25000" step="5000" name="price">
+    </form> <br> 
+
+    <!-- Color Input -->
+    <form>
+        <input type="color" name="color" value="#ff0000">
+    </form> <br>
+
+    <!-- Email Input -->
+    <form>
+        Email :
+        <input type="email">
+        <button>Submit</button>
+    </form> <br>
+
+    <!-- URL Input -->
+    <form>
+        URL : 
+        <input type="url">
+        <button>Submit</button>
+    </form> <br>
+
+    <!-- Date Input -->
+    <form>
+        Date :
+        <input type="date" min="2022-12-19" max="2022-12-25">
+    </form> <br>
+
+    <!-- File Input -->
+    <form>
+        File :
+        <input type="file" accept=".jpg,.png,.gif" multiple>
+    </form> <br>
+
+    <!-- Radio Button -->
+    <form>
+        <span>Gender :</span>
+        Male
+        <input type="radio" name="gender" value="male" checked>
+        Femail
+        <input type="radio" name="gender" value="femail">
+        <button>Submit</button>
+    </form> <br>
+
+    <!-- checkBox -->
+    <form>
+        Select Course :
+        <input type="checkbox" name="course" value="Jave">Java
+        <input type="checkbox" name="course" value=".NET">.NET
+        <input type="checkbox" name="course" value="UI">UI
+        <button>Submit</button> 
+    </form> <br>
+
+    <!-- CheckBox with Switch in list-->
+    <form>
+        <div>Select Course :</div>
+        <ul class="form-switch">
+            <li> <input type="checkbox" class="form-check-input" name="course" value="Jave"> Java</li>
+            <li> <input type="checkbox" class="form-check-input" name="course" value=".NET"> .NET</li>
+            <li> <input type="checkbox" class="form-check-input" name="course" value="UI"> UI</li>
+            <li> <input type="checkbox" class="form-check-input" name="course" value="Jave"> Oracle</li>
+            <li> <input type="checkbox" class="form-check-input" name="course" value=".NET"> PHP</li>
+            <li> <input type="checkbox" class="form-check-input" name="course" value="UI"> MEAN</li> <br>
+        </ul>
+        <button>Submit</button>
+    </form> <br>
+
+    <!-- CheckBox as Switch -->
+    <form>
+        <div class="form-switch">
+            <input type="checkbox" class="form-check-input">
+        </div>
+        <button>Submit</button>
+    </form> <br>
+
+    <!-- CheckBox Checked Style -->
+    <form>
+        <div class="terms">
+            <h3>Terms and Services :</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum sequi eligendi provident eum omnis! Nemo suscipit sunt in ipsam, recusandae quam explicabo, saepe exercitationem dolores esse provident obcaecati doloribus iure numquam atque ducimus vero ea repudiandae debitis. Quo, quam at velit soluta, deleniti ea rem sunt consectetur a pariatur repellat!</p>
+        </div>
+
+        <div>
+            <input type="checkbox" class="accept"> <span>I Accept</span>
+        </div> <br>
+        <button>Submit</button>
+    </form> <br>
+
+    <!-- Dropdown List -->
+    <form>
+        Select Your City :
+        <Select name="city">
+            <option>Choose Your City</option>
+            <optgroup label="North">
+                <option value="110046">Delhi</option>
+                <option disabled value="422001">Mumbai</option>
+                <option value="765430">Aurangabad</option>
+            </optgroup>
+
+            <optgroup label="South">
+                <option selected value="567894">Hyderabad</option>
+                <option value="657894">Chennai</option>
+                <option value="678905">Madras</option>
+            </optgroup>
+        </Select>
+        <button>Submit</button>
+    </form> <br>
+
+    <!-- ListBox "31 march me 40 mint pe hai"-->
+    <form>
+
+    </form>
+
+    <!-- Text Area "31 march me 47 mint pe hai" -->
+    <form>
+
+    </form>
+
+    <!-- Meter "31 march me 53 mint pe hai" -->
+    <form>
+
+    </form>
+
+    <!-- Progress "31 march me 01:02:40 Sec pe hai" -->
+    <!-- spinner border "31 march me 01:06:00 sec pe hai" -->
+    <form>
+
+    </form>
+
+    <!-- Buttons "31 march me 01:11:00 Sec pe hai"-->
+    <form>
+
+    </form>
+    
+
+    <!-- Ye Mera hai -->
+    <form>
+        <label>Downloading Progress :</label>
+        <Progress value="32" max="100">32%</Progress>
+    </form> <br>
+
+    <details>
+        <summary>Developers</summary>
+        <p>The most important Occupation</p>
+        <p>Frontend</p>
+        <p>Bckend</p>
+    </details> <br>
+
+    <form>
+        <cite>This is paragraph</cite>
+    </form> <br>
+
+    <form>
+        <mark>Marked Text</mark>
+    </form> <br>
+
+      
+
+</body>
+</html>
+

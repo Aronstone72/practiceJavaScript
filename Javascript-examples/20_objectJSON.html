@@ -1,0 +1,103 @@
+<!-- let obj = {key:value,key:function(){}} -->
+
+<!-- <script>
+    var product = {
+    "Name":"TV",
+    "Price":45000.33
+}
+document.write(product.price);
+document.write(product[key]);
+</script> -->
+
+<!-- <script>
+    var product = {
+        "Name" : "Samsung TV",
+        "Price": 44500.33,
+        "Stock": true,
+        "Cities": ["Delhi", "Hyd"],
+        "Rating": {"Rate":4.3, "Count": 3500}
+    };
+    document.write(`
+        Name :  ${product.Name} <br>
+        Price:  ${product.Price} <br>
+        Stock:  ${product.Stock} <br>
+        Cities: ${product.Cities.toString()} <br>
+        Rating: ${product.Rating.Rate} [${product.Rating.Count}]
+    `);
+</script> -->
+
+<!-- <script>
+    var product = {
+        "Name" : "",
+        "Price": 0,
+        "Stock": false,
+        "Cities": [],
+        "Rating": {"Rate":0, "Count": 0}
+    };
+   
+    product.Name = prompt("Enter Name");
+    product.Price = prompt("Enter Price");
+    product.Stock = prompt("Enter Stock", "true|false");
+    product.Cities[0] = prompt("Enter City 1");
+    product.Cities[1] = prompt("Enter City 2");
+    product.Rating.Rate = prompt("Enter User Rating");
+    product.Rating.Count = prompt("Enter Users Count");
+
+    document.write(`
+        Name :  ${product.Name} <br>
+        Price:  ${product.Price} <br>
+        Stock:  ${product.Stock} <br>
+        Cities: ${product.Cities.toString()} <br>
+        Rating: ${product.Rating.Rate} [${product.Rating.Count}]
+    `);
+</script> -->
+
+<!-- <script>
+    var product = {
+        "Name": "Samsung TV",
+        "Price" : 34000.33
+    }
+    for(var property in product)
+    {
+       document.write(`${property}  : ${product[property]}<br>`);
+    }
+</script> -->
+
+<!-- <script>
+    var product = {
+        "Name": "Samsung TV",
+        "Price" : 34000.33,
+        "Qty": 2,
+        "Total": function(){
+        return this.Qty * this.Price
+        },
+        "Print": function(){
+           document.write(`Name=${this.Name}<br>Price=${this.Price}<br>Qty=${this.Qty}<br>Total=${this.Total()}`);
+        }
+    }
+    product.Print();
+    document.write("<hr>");
+    product.Name = "Nike Casuals";
+    product.Price = 3500.44;
+    product.Qty = 3;
+    product.Print();
+    document.write("<hr>");
+    product.Name = "Watch";
+    product.Price= 2000.33;
+    product.Qty = 2;
+    product.Print();
+</script> -->
+
+<script>
+    var products = [
+        {Name: "TV", Price: 45000.44, Stock:true},
+        {Name: "Mobile", Price:23000.33, Stock:false}
+    ];
+    document.write("Mobile Price : " + products[1].Price);
+    document.write("<hr>");
+    for(var item of products)
+    {
+        document.write(`${item.Name} - ${item.Price} - ${item.Stock} <br>`);
+    }
+</script>
+

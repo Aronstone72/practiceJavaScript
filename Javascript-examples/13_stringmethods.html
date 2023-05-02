@@ -1,0 +1,25 @@
+<!-- String Methods / Properties
+length
+chartAt()
+charCodeAt()
+indexOf()
+lastIndexOf()
+slice()
+substr()
+substring()
+startsWith()
+endsWith() -->
+
+<!-- split() -->
+<script>
+    var email = prompt("Enter Your Email");
+    var [id, domain] = email.split('@');
+    document.write(`Your ID : ${id} <br> Domain : ${domain}`);
+</script> <br>
+
+<script>
+    var contacts = "john-9992838482, david-8822284853, sam-9938223483";
+    var [john, david, sam, a] = contacts.split(',');
+    document.write(david + "<br>" + sam);
+    document.write(a);   undefined
+</script>

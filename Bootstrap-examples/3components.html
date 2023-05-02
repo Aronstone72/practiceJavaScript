@@ -1,0 +1,152 @@
+<!-- alerts -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert component</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+<body class="container-fluid">
+    <h2>Alerts</h2>
+    <div class="alert alert-danger alert-dismissible">
+        <h2 class="alert-title">Delete Record</h2>
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+        <p class="alert-text">Record will be deleted.</p>
+        <a href="#" class="alert-link">Help?</a>
+    </div>
+    <div class="alert alert-success alert-dismissible">
+        <h2 class="alert-title">Registered Successfully..</h2>
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+        <button data-bs-dismiss="alert" class="btn btn-success">OK</button>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html> -->
+
+<!-- Badge -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+<body class="container-fluid">
+    <h2 class="text-center">Table of Contents</h2>
+    <ul class="list-unstyled">
+        <li class="bg-dark p-2 text-white mb-2 d-flex justify-content-between"> <span>HTML</span> <span class="badge bg-light text-dark">2</span> </li>
+        <li class="bg-dark p-2 text-white mb-2 d-flex justify-content-between"> <span>CSS</span> <span class="badge bg-light text-dark">6</span> </li>
+        <li class="bg-dark p-2 text-white mb-2 d-flex justify-content-between"> <span>Bootstrap</span> <span class="badge bg-light text-dark">8</span> </li>
+    </ul>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html> -->
+
+<!-- Cards -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .card-header {
+            height: 150px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <h2>Cards</h2>
+    <div class="d-flex flex-wrap">
+        <div class="card m-2 p-2 bg-primary text-white" style="width:250px">
+            <img src="../public/images/asp.jpg" height="160" class="card-img-top">
+            <div class="card-header">
+                <h3 class="card-title">ASP.NET</h3>
+                <p class="card-subtitle">Server Side</p>
+            </div>
+            <div class="card-body">
+                 <dl>
+                    <dt>Front End</dt>
+                    <dd>HTML, CSS</dd>
+                    <dt>Back End</dt>
+                    <dd>MySql, ASP</dd>
+                 </dl>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-dark w-100">Join Course</button>
+            </div>
+        </div>
+
+        <div class="card m-2 p-2 bg-dark text-white text-center" style="width:250px">
+           <div class="card-header">
+                <h3 class="card-title">Digital Marketing</h3>
+                <p class="card-subtitle">Server Side</p>
+            </div>
+            <div class="card-body">
+                <img src="../public/images/digitalmarketing.jpg" height="160" class="w-100 rounded rounded-circle">
+                 <dl>
+                    <dt>Front End</dt>
+                    <dd>HTML, CSS</dd>
+                    <dt>Back End</dt>
+                    <dd>MySql, ASP</dd>
+                 </dl>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-primary w-100">Join Course</button>
+            </div>
+        </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html> -->
+
+<!-- Collapse -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .card-header {
+            height: 150px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <h1 class="text-center">Netflix Frequently Asked Questions</h1>
+    <div>
+        <button data-bs-toggle="collapse" data-bs-target="#q1" class="btn btn-dark w-100">What is Netflix?</button>
+        <div class="mt-1 bg-dark text-white p-2 collapse show fade" id="q1">
+            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+            <p>You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+        </div>
+    </div>
+    <div class="mt-2">
+        <button data-bs-toggle="collapse" data-bs-target="#q2" class="btn btn-dark w-100">How must does Netflix cost?</button>
+        <div class="mt-1 bg-dark text-white p-2 collapse fade" id="q2">
+            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+            <p>You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+        </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

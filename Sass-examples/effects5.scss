@@ -1,0 +1,18 @@
+// example 1
+// @for $i from 1 to 5 {
+//     .item1-#{$i} {
+//       color: red;  
+//     } 
+// }
+
+// example2
+.box {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+@for $i from 1 to 4 {
+    .box-#{$i} {
+        margin-left: 100px * $i;
+    }
+}

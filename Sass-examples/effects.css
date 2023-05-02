@@ -1,0 +1,10 @@
+.container {
+  border: 1px solid red;
+  padding: 10px;
+}
+.container h2 {
+  color: red;
+}
+.container p {
+  color: blue;
+}/*# sourceMappingURL=effects.css.map */

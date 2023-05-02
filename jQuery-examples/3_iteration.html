@@ -1,0 +1,35 @@
+<!--   jQuery  Iterations -->
+<!-- $.each(collectionName, function(property, value){
+                       
+            })
+
+            $.each(collection, (prop, value)=>{
+
+            })
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+             var categories = ["Electronics", "Footwear", "Fashion"];
+             $.each(categories,(property, value)=>{
+                  $(`<li>[${property}] ${value}</li>`).appendTo("ol");
+                  $("select").append(`<option>${value}</option>`);
+             })
+        })
+    </script>
+</head>
+<body>
+    <ol>
+        
+    </ol>
+    <select></select>
+</body>
+</html>

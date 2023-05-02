@@ -1,0 +1,52 @@
+<!-- Ajax Life Cycle Methods -->
+<!-- fetch(), $.ajax() => XMLHttpRequest -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+             $("button").click(function(){
+                 $.ajax({
+                    method : "get",
+                    url: "../data/product.json",
+                    success: function(data){
+                         $.each(data,(property,value)=>{
+                             $(`<li>${value.Name}</li>`).appendTo("ol");
+                         })
+                    }
+                 })
+             })
+        })
+        .ajaxStart(()=> {
+            alert(`Your Request for Products Data Started`);
+        })
+        .ajaxSuccess(()=> {
+            alert(`Your request proccessed successfully..`);
+        })
+        .ajaxComplete(()=> {
+            alert(`Your request for products data completed.`);
+        })
+        .ajaxStop(()=> {
+            alert(`Request Stopped and Memory Cleaned`);
+        })
+        .ajaxError((event, jqXHR)=>{
+            alert(`${jqXHR.status} - ${jqXHR.statusText}`);
+        })
+    </script>
+</head>
+<body>
+    <button>Load</button>
+    <br><br>
+    <ol>
+
+    </ol>
+</body>
+</html>
+
+

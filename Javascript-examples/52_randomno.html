@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        function guessNumber(){
+            const random = Math.floor(Math.random() * 1000) + 1;
+
+            let number = parseInt(prompt('Guess a number from 1 to 1000'));
+
+            while(number !== random){
+                number = parseInt(prompt('Guess a number from 1 to 1000'));
+            }
+
+            if(number == random){
+                console.log('You Guess the Correct Number');
+            }
+        }
+        guessNumber();
+    </script> -->
+
+    <!-- <script>
+        var a = 489; // the number that needs to be guessed to win the game.
+
+        //var b stores whatever value the user enters.
+        var b = prompt("Enter a number in between 1 and 1000");
+
+        // if/else statement that test if the variables are equal.
+        if (b == a) {
+        alert("You're right!");
+        } else {
+        alert("Incorrect! Try again!");
+        }
+
+    </script> -->
+
+    <script>
+        var a = Math.floor(Math.random() * (999)) + 1;
+
+        while (true) {
+
+        var b = prompt("Enter a number in between 1 and 1000");
+
+        
+
+        if (b == a) {
+        alert("You're right!");
+        break; // Stops loop
+        } else if (!b) {
+        alert("The Correct Answer was: " + a); //Shows correct answer
+        break;
+        } else {
+        alert("Incorrect! Try again!");
+    }
+}
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

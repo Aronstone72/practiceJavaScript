@@ -1,0 +1,77 @@
+<!-- jQuery Interactions -->
+<!-- - draggable()
+- resizable()
+- sortable() etc.. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/jquery-ui/jquery-ui.css">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/jquery-ui/jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("img").resizable();
+            $("ol").sortable();
+        })
+    </script>
+</head>
+<body>
+ 
+        <img src="../public/images/a1.jpg" width="100" height="100">
+        <div>
+            <ol>
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>CSS</li>
+            </ol>
+        </div>
+   
+</body>
+</html>
+
+<!-- jQuery Widgets -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/jquery-ui/jquery-ui.css">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/jquery-ui/jquery-ui.js"></script>
+    <script>
+        $(function(){
+             $("#faq").dialog();  (or)  
+             $("#faq").accordion();
+             $("#dep").datepicker();
+        })
+    </script>
+</head>
+<body>
+    <div>
+        Departure : <input type="text" id="dep">
+    </div>
+    <div id="faq" title="Netflix FAQ">
+        <h2>What is Netflix?</h2>
+        <div>
+            <p>something..</p>
+        </div>
+        <h2>How to use Netflix?</h2>
+        <div>
+            <p>something.. about..</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<!--  jQuery Plugins -->
+<!-- a) Barcode
+b) Grid
+c) Cookies -->

@@ -1,0 +1,18 @@
+$shadow: 2px 2px 2px black;
+$border: 2px solid red;
+$padding : 20px;
+
+@mixin LayoutEffects
+{
+    border: $border;
+    box-shadow: $shadow;
+    padding: $padding;
+}
+
+.container {
+    @include LayoutEffects;
+}
+h2 {
+    @include LayoutEffects;
+    color:red;
+}

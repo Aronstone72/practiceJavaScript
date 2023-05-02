@@ -1,0 +1,21 @@
+<!-- Anonymous Function -->
+<!-- <script>
+    ( function(){
+        document.write("Anonymous Function");
+     })();
+</script> -->
+
+<script>
+    var x = prompt("Enter Number");
+
+    if(isNaN(x)) {
+      (function(){
+           document.write("Hello ! " + x);
+       })();
+    } else {
+       (function(){
+           x++;
+           document.write(`X is increased by 1 = ${x}`);
+       })();
+    }
+</script>

@@ -1,0 +1,156 @@
+<!-- Strict Mode For Js -->
+<!-- <script>
+    x=10;
+    document.write("X=" + x);
+</script> -->
+<br>
+<!-- <script>
+    "use strict";
+    x=10;
+    document.write("X=" + x);
+</script> -->
+
+<!-- How JavaScript refers HTML elements? -->
+<!-- JavaScript can refer HTML elements by using DOM hierarchy -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element</title>
+    <script>
+        function bodyLoad(){
+            window.document.images[0].src="../public/images/asp.jpg";
+            window.document.forms[0].elements[0].value = "Register";
+            window.document.forms[1].elements[1].value = "Login";
+        }
+    </script>
+</head>
+<body onload="bodyLoad()">
+    <div>
+        <img width="100" height="100" border="1">
+    </div>
+    <div>
+        <form>
+            <h2>Register</h2>
+            Your Name : <input type="button"><input type="text">
+        </form>
+    </div>
+    <div>
+        <form> 
+            <h2>Login</h2>
+            Your Name : <input type="email"><input type="button">
+        </form>
+    </div>
+</body>
+</html> -->
+
+<!-- 2 :- JavaScript can refer HTML elements by using name -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element</title>
+    <script type="text/javascript">
+        function bodyLoad(){
+            pic.src="../public/images/angular.jpg";
+            frmRegister.btnRegister.value = "Register";
+            frmLogin.btnLogin.value = "Login";
+        }
+    </script>
+</head>
+<body onload="bodyLoad()">
+    <div>
+        <img width="100" height="100" border="1" name="pic">
+    </div>
+    <div>
+        <form name="frmRegister"> 
+            <h2>Register</h2>
+            Your Name : <input type="text"><input type="button" name="btnRegister">
+        </form>
+    </div>
+    <div>
+        <form name="frmLogin">  
+            <h2>Login</h2>
+            Your Name : <input type="email"><input type="button" name="btnLogin">
+        </form>
+    </div>
+</body>
+</html> -->
+
+<!-- 3 :- JavaScript can refer HTML elements by using id -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element</title>
+    <script type="text/javascript">
+        function bodyLoad(){
+            document.getElementById("pic").src="../public/images/php.jpg";
+            document.getElementById("btnRegister").value = "Register";
+            document.getElementById("btnLogin").value = "Login";
+        }      
+    </script>
+</head>
+<body onload="bodyLoad()">
+    <div>
+        <img width="100" height="100" border="1" name="pic" id="pic">
+    </div>
+    <div>
+        <form name="frmRegister"> 
+            <h2>Register</h2>
+            Your Name : <input type="text"><input type="button" name="btnRegister" id="btnRegister">
+        </form>
+    </div>
+    <div>
+        <form name="frmLogin">  
+            <h2>Login</h2>
+            Your Name : <input type="email"><input type="button" name="btnLogin" id="btnLogin">
+        </form>
+    </div>
+</body>
+</html> -->
+
+<!-- 4 :- JavaScript can refer HTML elements by using CSS Selector -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element</title>
+    <script type="text/javascript">
+          function bodyLoad(){
+            document.querySelector("img").src="../public/images/avtar.jpg";
+            document.querySelector("#btnRegister").value = "Register";
+            document.querySelector(".btn-primary").value = "Login";
+          }
+    </script>
+</head>
+<body onload="bodyLoad()">
+    <div>
+        <img width="100" height="100" border="1" name="pic" id="pic">
+    </div>
+    <div>
+        <form name="frmRegister"> 
+            <h2>Register</h2>
+            Your Name : <input type="text"><input type="button" name="btnRegister" id="btnRegister">
+        </form>
+    </div>
+    <div>
+        <form name="frmLogin">  
+            <h2>Login</h2>
+            Your Name : <input type="email"><input type="button" name="btnLogin" id="btnLogin" class="btn-primary">
+        </form>
+    </div>
+</body>
+</html>
+
+<!-- 5 :- JavaScript can refer HTML elements by using TagName -->
+<!-- 5 :- JavaScript can refer HTML elements by using ClassName -->
+<!-- 5 :- JavaScript can refer HTML elements by using Name-->

@@ -1,0 +1,123 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function VerifyCode(){
+            var code = document.getElementById("code").value;
+            var error = document.getElementById("error");
+            if(code.charAt(0)=="S") {
+                error.innerHTML = "";
+            } else {
+                error.innerHTML = "Invalid Code".fontcolor('red');
+            }
+        }
+    </script>
+</head>
+<body>
+    SBI IFSC Code : <input onkeyup="VerifyCode()" type="text" id="code"> <span id="error"></span>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function VerifyUser(){
+            var username = document.getElementById("UserName").value;
+            var error = document.getElementById("error");
+            if(username.charCodeAt(0)>=65 && username.charCodeAt(0)<=90){
+                error.innerHTML = "";
+            } else {
+                error.innerHTML  = "Name must start with Uppercase letter".fontcolor('red');
+            }
+        }
+    </script>
+</head>
+<body>
+    Your Name : <input type="text" onkeyup="VerifyUser()" id="UserName"> <span id="error"></span>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function VerifyEmail(){
+            var email = document.getElementById("Email").value;
+            var error = document.getElementById("error");
+            if(email.indexOf("@")==-1){
+                error.innerHTML = "Invalid Email : Please Include @".fontcolor('red');
+            } else {
+                error.innerHTML = "";
+            }
+        }
+    </script>
+</head>
+<body>
+    Your Email : <input type="text" onblur="VerifyEmail()" id="Email"> <span id="error"></span>
+</body>
+</html> -->
+
+<!-- Starts with & Ends with -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        function VerifyCard(){
+            var card = document.getElementById("Card").value;
+            var cardimg = document.getElementById("cardImg");
+            if(card.startsWith("4550")) {
+                cardimg.src = "../public/images/visacard.png";
+            } else if(card.startsWith("5540")) {
+                cardimg.src = "../public/images/mastercard.png";
+            }
+        }
+        function VerifySkype(){
+            var skype = document.getElementById("skype").value;
+            var error = document.getElementById("error");
+            if(skype.endsWith("outlook.com")) {
+                error.innerHTML = "";
+            } else {
+                error.innerHTML = "Invalid Skype ID".fontcolor('red');
+            }
+        }
+    </script>
+</head>
+<body class="container-fluid">
+    <dl>
+        <dt>Your Card Number</dt>
+        <dd class="input-group">
+            <input type="text" onkeyup="VerifyCard()" id="Card"> <img class="input-group-text" width="60" id="cardImg">
+        </dd>
+        <dt>Your Skype ID</dt>
+        <dd>
+            <input type="text" onblur="VerifySkype()" id="skype">
+        </dd>
+        <dd id="error"></dd>
+    </dl>
+</body>
+</html> -->
+
+<script>
+    var email = prompt("Enter Your Email");
+    var id = email.substring(email.indexOf("@"),0);
+    var domain = email.slice(email.indexOf("@")+1)
+    document.write(`Your ID : ${id}<br>Your Domain : ${domain}`);
+</script>

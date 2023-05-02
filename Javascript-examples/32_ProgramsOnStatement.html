@@ -1,0 +1,166 @@
+<!-- Decision Making Statements -->
+<!-- IF Select
+- Forward Jump
+- Simple Decision
+- Multiple
+- Multi Level -->
+
+<!-- 1. Write a program to find if the given number is with in the specified range? -->
+<!-- <script>
+    function FindRange(n, min, max){
+        if(n>=min && n<=max){
+            document.write(`Your Number ${n} is in range of ${min}-${max}`);
+        } else{
+            document.write(`Your Number ${n} is out of range ${min}-${max}`);
+        }
+    }
+    FindRange(141,10,20); 
+</script> -->
+
+<!-- 2. Write a program to find the largest among 3 numbers. -->
+<!-- <script>
+    function FindLargest(a,b,c){
+        if(a>b && a>c){
+            document.write("A is Large");
+        } else if(b>c){
+            document.write("B is large");
+        } else
+        {
+            document.write("C is large");
+        }
+    }
+    FindLargest(10,34,64);
+</script> -->
+
+<!-- 3. Write a program to find if the given values are for a triangle or square? -->
+<!-- <script>
+    function FindShapes(values){
+        if(values.length==3){
+            document.write("Values are for Triangle");
+        } else if(values.length==4){
+            document.write("Values are for Square");
+        } else{
+            document.write("Please Provide values only for Triangle or Square");
+        }
+    }
+    FindShapes([10,20,30,40,50]);
+</script> -->
+
+<!-- 4. Write a program to find if the values are for a square or rectangle? -->
+<!-- <script>
+    function FindSquare(side1,side2,side3,side4){
+        if(side1==side2 && side2==side3 && side3==side4){
+            document.write("Values are for Square");
+        } else{
+            document.write("Values are for Rectangle");
+        }
+    }
+    FindSquare(10,10,10,10);
+</script> -->
+
+<!-- 5. Write to program to Check if a triangle is equilateral, scalene, or isosceles
+ -->
+<!-- <script>
+    function FindTriangleType(side1, side2, side3){
+        if(side1==side2 && side1==side3){
+            document.write("This is Equilateral Triangle");
+        }else if(side1==side2 || side2==side3 || side1==side3){
+            document.write("This is Isosceles Triangle");
+        }else{
+            document.write("This is Scalene Triangle");
+        }
+    }
+    FindTriangleType(57,56,58);
+</script>  -->
+
+<!-- 6. Write a program to convert number into words? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number to Words</title>
+    <style>
+        body{
+            text-align: center;
+            padding: 10px;
+            width: 400px;
+            height: 400px;
+            padding: 20px;
+            margin-left: 33%;
+            margin-top: 7%;
+            border: 2px solid red;
+            background-color: burlywood;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        h1{
+            background-color: silver;
+            color: black;
+            border-radius: 10px;
+        }
+        div{
+            margin-top: 10%;
+        }
+        input{
+            border-radius: 5px;
+        }
+        #numberInput{
+            padding: 10px;
+        }
+        button{
+            margin-top: 20px;
+        }
+        #result{
+            margin-bottom: 40px;
+            background-color: black;
+            color: white;
+            font-size: larger;
+            font-weight: bold;
+            width: 200px;
+            height: 40px;
+            margin-left: 100px;
+            border-radius: 10px;
+        }
+        #txt{
+            color: black;
+            font-size: larger;
+        }
+    </style>
+    <script>
+        function doConvert (){
+            let numberInput = document.querySelector('#numberInput').value ;
+            let myDiv = document.querySelector('#result');
+
+            let oneToTwenty = ['','one ','two ','three ','four ', 'five ','six ','seven ','eight ','nine ','ten ',
+            'eleven ','twelve ','thirteen ','fourteen ','fifteen ','sixteen ','seventeen ','eighteen ','nineteen '];
+            let tenth = ['', '', 'twenty','thirty','forty','fifty', 'sixty','seventy','eighty','ninety'];
+
+            if(numberInput.toString().length > 7) return myDiv.innerHTML = 'overlimit' ;
+            console.log(numberInput);
+            //let num = ('0000000000'+ numberInput).slice(-10).match(/^(\d{1})(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
+            let num = ('0000000'+ numberInput).slice(-7).match(/^(\d{1})(\d{1})(\d{2})(\d{1})(\d{2})$/);
+            console.log(num);
+            if(!num) return;
+
+            let outputText = num[1] != 0 ? (oneToTwenty[Number(num[1])] || `${tenth[num[1][0]]} ${oneToTwenty[num[1][1]]}` )+' million ' : ''; 
+        
+            outputText +=num[2] != 0 ? (oneToTwenty[Number(num[2])] || `${tenth[num[2][0]]} ${oneToTwenty[num[2][1]]}` )+'hundred ' : ''; 
+            outputText +=num[3] != 0 ? (oneToTwenty[Number(num[3])] || `${tenth[num[3][0]]} ${oneToTwenty[num[3][1]]}`)+' thousand ' : ''; 
+            outputText +=num[4] != 0 ? (oneToTwenty[Number(num[4])] || `${tenth[num[4][0]]} ${oneToTwenty[num[4][1]]}`) +'hundred ': ''; 
+            outputText +=num[5] != 0 ? (oneToTwenty[Number(num[5])] || `${tenth[num[5][0]]} ${oneToTwenty[num[5][1]]} `) : ''; 
+
+            myDiv.innerHTML = outputText; 
+}
+    </script>
+</head>
+<body align="center">
+    <h1>Number To Text</h1>
+    <div id="txt">Please Enter a Number</div> <br>
+    <input id="numberInput"> <br> <br>
+    <button onclick="doConvert()">Convert to text</button> 
+    <div id="result"><div>
+</body>
+</html>

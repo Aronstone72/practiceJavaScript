@@ -1,0 +1,157 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function AllChange(){
+            var all = document.getElementById("all");
+            if(all.checked==true) {
+                document.getElementById("stock").checked = true;
+                document.getElementById("visible").checked = true;
+            } else {
+                document.getElementById("stock").checked = false;
+                document.getElementById("visible").checked = false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="checkbox" onchange="AllChange()" id="all"> Select All <br>
+    <input type="checkbox" id="stock"> In Stock
+    <br>
+    <input type="checkbox" id="visible"> Is Visible
+</body>
+</html> -->
+
+<!-- Toggle with boolean -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function StockChange(){
+            var stock = document.getElementById("Stock");
+            var lblStock = document.getElementById("lblStock");
+            if(stock.checked==1){
+                lblStock.innerHTML = "Available";
+            } else {
+                lblStock.innerHTML = "Out of Stock";
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="checkbox" onchange="StockChange()" id="Stock"> <span id="lblStock">Out of Stock</span>
+</body>
+</html> -->
+
+<!-- Button Toggle -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ToggleClick(){
+            var button = document.querySelector("button");
+            var img = document.querySelector("img");
+            img.style.display = (img.style.display=="none")?"block":"none";
+            button.innerHTML =  (button.innerHTML=="Show")?"Hide":"Show";
+        }
+    </script>
+</head>
+<body>
+    <button onclick="ToggleClick()">Show</button>
+    <br><br>
+    <img src="../public/images/asp.jpg" style="display:none" width="200" height="200">
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function ToggleClick(){
+            var icon = document.getElementById("icon");
+            var details = document.getElementById("details");
+            icon.innerHTML = (icon.innerHTML=="+")?"X":"+";
+            details.style.display = (details.style.display=="none")?"block":"none";
+        }
+    </script>
+</head>
+<body>
+    <button onclick="ToggleClick()">
+        <span>What is Netflix ?</span>
+        <span id="icon">+</span>
+    </button>
+    <div id="details" style="display:none">
+        <p> 
+            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+        </p>
+        <p>
+            You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+        </p>
+
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script>
+        function ToggleClick(){
+            var icon = document.getElementById("icon");
+            var details = document.getElementById("details");
+            icon.className = (icon.className=="bi bi-chevron-up")?"bi bi-chevron-down":"bi bi-chevron-up";
+            details.style.display = (details.style.display=="none")?"block":"none";
+        }
+    </script>
+</head>
+<body>
+    <button onclick="ToggleClick()">
+        <span>What is Netflix ?</span>
+        <span id="icon" class="bi bi-chevron-up"></span>
+    </button>
+    <div id="details" style="display:none">
+        <p> 
+            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+        </p>
+        <p>
+            You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+        </p>
+
+    </div>
+</body>
+</html>

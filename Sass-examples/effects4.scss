@@ -1,0 +1,55 @@
+// Single decision
+// $size : 8px;
+// $border: $size solid red;
+
+// .container {
+//     border: $border;
+//     @if $size > 5px {
+//         border-radius: 10px;
+//     }
+//     @else {
+//         border-radius: 0px;
+//     }
+//     padding: 10px;
+// }
+
+// Multiple Decision
+$colorTheme: "danger";
+
+.container {
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+@if $colorTheme=="danger"
+{
+    .container {
+        background-color: rgb(249,144,144);
+    }
+    p, h2 {
+        font-family: Arial;
+        color: rgb(156,6,6);
+    }
+}
+
+@else if $colorTheme=="success"
+{
+    .container {
+        background-color: rgb(154, 230, 154);
+    }
+    p, h2 {
+        font-family: Arial;
+        color: rgb(8, 185, 38);
+    }
+}
+
+@else if $colorTheme=="warning"
+{
+    .container {
+        background-color: rgb(255,234,197);
+    }
+    p, h2 {
+        font-family: Arial;
+        color: rgb(158,6,6);
+    }
+}

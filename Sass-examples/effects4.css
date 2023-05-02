@@ -1,0 +1,13 @@
+.container {
+  border: 1px solid gray;
+  padding: 20px;
+}
+
+.container {
+  background-color: rgb(249, 144, 144);
+}
+
+p, h2 {
+  font-family: Arial;
+  color: rgb(156, 6, 6);
+}/*# sourceMappingURL=effects4.css.map */

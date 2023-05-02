@@ -1,0 +1,17 @@
+.container {
+  border: 2px solid red;
+  box-shadow: 2px 3px 3px yellow;
+  padding: 20px;
+}
+.container h2 {
+  color: red;
+  padding: 20px;
+  text-shadow: 2px 3px 3px yellow;
+  border: 2px solid red;
+}
+.container p {
+  color: black;
+  border: 2px solid black;
+  text-align: center;
+  background-color: green;
+}/*# sourceMappingURL=effects2.css.map */

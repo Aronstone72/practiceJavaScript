@@ -1,0 +1,75 @@
+<!-- <script>
+    var username = "John";
+    var age = 22;
+    var msg1 = "Hello !" + " " + username + " " + "you will be" + " " + (age+1) + " " + "next year.";
+    document.write(msg1 + "<br>");
+    var msg2 = `Hello ! ${username} you will be ${age+1} next year.`;
+    document.write(msg2);
+</script> -->
+
+<!-- <script>
+    var path = "\"D:\\Images\\pic.jpg\"";
+    document.write(path);
+</script> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ChangeCase(){
+            var username = document.getElementById("UserName").value;
+            document.getElementById("UserName").value = username.toUpperCase();
+            if(username==""){
+                document.getElementById("userError").innerHTML = "User Name Required".fontcolor('red').italics();
+            } else {
+                document.getElementById("userError").innerHTML = "";
+            }
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd><input type="text" onblur="ChangeCase()" id="UserName" placeholder="Block Letter Only"></dd>
+        <dd id="userError"></dd>
+    </dl>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function VerifyName(){
+             var username = document.getElementById("UserName").value;
+             var userError = document.getElementById("userError");
+             if(username==""){
+                userError.innerHTML = "User Name Required".fontcolor('red');
+             } else {
+                if(username.length<4) {
+                    userError.innerHTML = "Name too short min 4 chars".fontcolor('red');
+                } else if(username.length>10) {
+                    userError.innerHTML = "Name too long max 10 chars.".fontcolor('red')
+                } else {
+                    userError.innerHTML = "";
+                }
+             }
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd><input type="text" onkeyup="VerifyName()" id="UserName" ></dd>
+        <dd id="userError"></dd>
+    </dl>
+</body>
+</html>

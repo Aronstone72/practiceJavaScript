@@ -1,0 +1,12 @@
+.container {
+  border: 2px solid red;
+  box-shadow: 2px 2px 2px black;
+  padding: 20px;
+}
+
+h2 {
+  border: 2px solid red;
+  box-shadow: 2px 2px 2px black;
+  padding: 20px;
+  color: red;
+}/*# sourceMappingURL=effects3.css.map */

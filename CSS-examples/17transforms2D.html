@@ -1,0 +1,256 @@
+<!-- Example 01 translate( )-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            transform: translate(0px,0px);
+            transition: 1s;
+        }
+        img:hover {
+            transform: translate(300px, 50px);
+            transition: 3s;
+        }
+    </style>
+</head>
+<body>
+    <img src="../public/images/avtar.jpg" width="200" height="200">
+</body>
+</html>
+-->
+
+<!-- Example 02 translate( )-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .men-banner {
+            transform: translateX(0px);
+        }
+        .men-banner:hover {
+            transform: translateX(-10px);
+        }
+        .men-banner:hover img {
+            width: 310px;
+        }
+        .men {
+            border:1px solid gray;
+            width: 300px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="men">
+        <div class="men-banner">
+            <img src="../public/images/lion.jpg" width="300" height="400">
+        </div>
+    </div>
+</body>
+</html>
+-->
+
+<!-- Example 03 translate( )-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        button {
+            transform: translateX(0px);
+            transition: 2s;
+            width: 100px;
+            position: relative;
+        }
+        button:hover span {
+            margin-left: 20px;
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <button>
+       <span class="bi bi-arrow-right"></span>
+    </button>
+</body>
+</html>
+-->
+
+<!-- Example of Scale( )-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+        img {
+            transform: scale(3,3);
+            transition: 3s;
+        }
+        img:hover {
+            transform:scale(6,6);
+            transition: 2s;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            border:1px solid gray;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+   <div class="box">
+    <img src="../public/images/realme33aquaPNG.png" width="100" height="100">
+   </div>
+</body>
+</html>-->
+
+<!-- Example of skew( ) -->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+       
+        .box {
+            width: 200px;
+            height: 200px;
+            border:1px solid gray;
+            overflow: hidden;
+        }
+        img {
+            transform: skew(0deg);
+            transition: 2s;
+        }
+        img:hover {
+            transform:skewY(-20deg);
+         
+            transition: 3s;
+        }
+    </style>
+</head>
+<body>
+   <div class="box">
+    <img src="../public/images/avtar.jpg" width="200" height="200">
+   </div>
+</body>
+</html>
+-->
+
+<!-- Example 01 Matrix( ) -->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        img {
+            transform: matrix(1,0,0,1,0,0);
+            transition: 2s;
+        }
+        img:hover {
+            transform: matrix(2,3,2,2,500,100);
+            transition: 3s;
+        }
+    </style>
+</head>
+<body>
+    <img src="../public/images/avtar.jpg" width="200" height="200">
+</body>
+</html>-->
+
+<!-- Example 02 Matrix( ) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .box-1 {
+            background-color: yellow;
+            border: 2px solid black;
+            height: 200px;
+            width: 50px;
+            position: absolute;
+           
+        }
+        .box-2 {
+            background-color: greenyellow;
+            border: 2px solid black;
+            height: 200px;
+            width: 50px;
+            position: absolute;
+            margin-left: 50px;
+            transform: skewX(20deg);
+            box-shadow: 10px 10px 3px black;
+        }
+        .box-3 {
+            background-color: lightpink;
+            border: 2px solid black;
+            height: 50px;
+            width: 150px;
+            position: absolute;
+            margin-top: 150px;
+            transform:skewX(60deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1">
+
+    </div>
+    <div class="box-2">
+
+    </div>
+    <div class="box-3">
+
+    </div>
+    <div class="box-4">
+
+    </div>
+</body>
+</html>

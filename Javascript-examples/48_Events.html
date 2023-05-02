@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function InsertClick(obj, e){
+            document.write(`
+                Button Id   : ${obj.id} <br>
+                Button Name : ${obj.name} <br>
+                Button Class: ${obj.className} <br>
+                Clicked At X : ${e.clientX} <br>
+                Ctrl Key    : ${e.ctrlKey}
+            `);
+        }
+    </script>
+</head>
+<body>
+    <button id="btnInsert" name="Insert" class="btn btn-primary" onclick="InsertClick(this, event)">Insert</button>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ImageClick(e){
+            if(e.ctrlKey) {
+                window.open("../public/images/asp.jpg","ASP","width=450 height=300");
+            } else {
+                alert("You can use ctrl + click to view large.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="../public/images/asp.jpg" onclick="ImageClick(event)">
+    <p>Ctrl + Click to open</p>
+</body>
+</html> -->
+
+<!-- JavaScript allows custom event arguments.
+    - Argument can be any type
+        a) Primitive Type
+        b) Non Primitive Type -->
+

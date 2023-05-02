@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    
+    <title>Shopper | Theme</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .brand-title {
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .brand-menu {
+            font-size: 20px;
+        }
+        .brand-menu span {
+            margin-left: 20px;
+        }
+        .brand-icons {
+            font-size: 20px;
+        }
+        .brand-icons span {
+            margin-right: 20px;
+        }
+        .brand-offer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: small;
+        }
+        .brand-nav {
+            margin-top: 15px;
+            height: 450px; 
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+        }
+        .women {
+            background-image: url(../public/images/women.jpg);  
+            background-size: cover;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            opacity: 0.6;
+        }
+        .women:hover {
+            opacity: 1;
+        }
+        .men {
+            background-image: url(../public/images/men.jpg);
+            background-size: cover;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            opacity: 0.6;
+        }
+        .men:hover {
+            opacity: 1;
+        }
+        .kids {
+            background-image: url(../public/images/kids1.jpg);
+            background-size: cover;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            opacity: 0.6;
+        }
+        .kids:hover {
+            opacity: 1;
+        }
+        .banner-title {
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 2px gray;
+            margin-top: 180px;
+        }
+        .women button {
+            width: 200px;
+            height: 45px;
+            background-color: white;
+            margin-top: 100px;
+        }
+        .men button {
+            width: 200px;
+            height: 45px;
+            background-color: white;
+            margin-top: 80px;
+        }
+        .kids button {
+            width: 200px;
+            height: 45px;
+            background-color: white;
+            margin-top: 130px;
+        }
+        .brand-policy {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 20px;
+            font-size: small;
+            border: 10px transparent gray;
+            box-shadow: 10px solid gray;
+        }
+
+        .brand-new-collection {
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="brand-title">
+            <div>
+                Shopper.
+            </div>
+
+        <div class="brand-menu">
+            <span>Home</span>
+            <span>Catlog</span>
+            <span>Shop</span>
+            <span>Pages</span>
+            <span>Blogs</span>
+            <span>Docs</span>
+        </div>
+
+        <div class="brand-icons">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart"></span>
+        </div>
+        </header>
+        
+        <div class="brand-offer">
+            <span class="bi bi-lightning-fill text-warning"></span> HAPPY HOLIDAY DEALS ON EVERYTHING <span class="bi bi-lightning-fill text-warning"></span>
+        </div>
+
+        <div class="brand-nav">
+            <div class="women">
+                <div class="banner-title">
+                    Women
+                </div>
+                <div>
+                    <button>Shop Women <span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+
+            <div class="men">
+                <div class="banner-title"> 
+                    Men
+                </div>
+                <div>
+                    <button>Shop Men <span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+
+            <div class="kids">
+                <div class="banner-title">
+                    Kids
+                </div>
+                <div>
+                    <button>Shop Women <span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="brand-policy">
+            <div>
+                <h6><span class="bi bi-truck text-danger"></span> FREE SHIPPING</h6>
+                <p>From all orders over $100</p>
+            </div>
+    
+            <div>
+                <h6><span class="bi bi-arrow-clockwise text-danger"></span> FREE RETURNS</h6>
+                <p>Return money within 30 days</p>
+            </div>
+    
+            <div>
+                <h6><span class="bi bi-lock text-danger"></span> SECURE SHOPPING</h6>
+                <p>You're in safe hands</p>
+            </div>
+    
+            <div>
+                <h6><span class="bi bi-tag text-danger"></span> OVER 10,000 STYLES</h6>
+                <p>We have everything you need</p>
+            </div>
+        </div>
+
+        <div class="brand-new-collection">
+            <div>
+                NEW COLLECTION
+            </div>
+            <div>
+                <h2>Best Picks 2019</h2>
+            </div>
+            <div>
+                <p>Appear, dry there darkness they're seas, dry waters thing fly midst. Beast, above fly brought Very green.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
